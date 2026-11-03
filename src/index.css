@@ -1,0 +1,836 @@
+@import "tailwindcss";
+
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+
+#bootom{
+    background: linear-gradient(transparent,black);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080811;
+  font-family: Arial, sans-serif;
+}
+
+.gallery-app {
+  min-height: 100vh;
+  color: white;
+  padding-top: 1px;
+background: linear-gradient(
+    120deg,
+    #010a0d2f,
+    #00050822,
+    #02010f2c,
+    #06040738
+  );
+}
+
+
+
+ /* Collection Button */
+
+#collection-btn {
+  position: absolute;
+  top: 25px;
+  left: 45px;
+
+  padding: 12px 22px;
+
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #c026d3
+  );
+
+  color: white;
+  border: 1px solid #a855f7;
+  border-radius: 12px;
+
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+
+  box-shadow: 0 0 15px #9333ea55;
+
+  transition: all 0.3s ease;
+}
+
+#collection-btn:hover {
+  transform: translateY(-3px);
+
+  background: linear-gradient(
+    135deg,
+    #490688,
+    #ec4899
+  );
+
+  box-shadow: 0 0 25px #a855f7aa;
+}
+
+#collection-btn:active {
+  transform: scale(0.95);
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+  #collection-btn {
+    top: 15px;
+    left: 12px;
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+
+
+}
+
+
+/* Collection Button */
+
+#collection-btn {
+  position: absolute;
+  top: 25px;
+  left: 1585px;
+
+  padding: 12px 22px;
+
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #c026d3
+  );
+
+  color: white;
+  border: 1px solid #a855f7;
+  border-radius: 12px;
+
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+
+  box-shadow: 0 0 15px #9333ea55;
+
+  transition: all 0.3s ease;
+}
+
+#collection-btn:hover {
+  transform: translateY(-3px);
+
+  background: linear-gradient(
+    135deg,
+    #9333ea,
+    #ec4899
+  );
+
+  box-shadow: 0 0 25px #a855f7aa;
+}
+
+#collection-btn:active {
+  transform: scale(0.95);
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+  #collection-btn {
+    top: 25px;
+    left: 12px;
+    padding: 20px 25px;
+    font-size: 13px;
+  }
+}
+ 
+
+
+
+
+#search-container {
+  background-color: #504c4f5f;
+  padding:30px 36px;
+  border-radius: 4px;
+}
+
+
+
+
+/* Main Background */
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.gallery-app {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background: radial-gradient(
+    ellipse at bottom,
+    #01060bb1 0%,
+    #090e2975 100%
+  );
+  overflow-x: hidden;
+  overflow-y: clip;
+}
+
+/* App Content */
+.gallery-content {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+}
+
+/* Stars */
+#stars,
+#stars2,
+#stars3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Small Stars */
+#stars {
+  width: 1px;
+  height: 1px;
+  box-shadow:
+    120px 500px #fff,
+    250px 100px #fff,
+    400px 300px #fff,
+    550px 700px #fff,
+    700px 150px #fff,
+    850px 450px #fff,
+    1000px 250px #fff,
+    1150px 600px #fff,
+    1300px 100px #fff,
+    1450px 400px #fff,
+    1600px 200px #fff,
+    1750px 650px #fff,
+    1900px 350px #fff,
+    200px 850px #fff,
+    500px 950px #fff,
+    900px 800px #fff,
+    1250px 900px #fff,
+    1550px 800px #fff,
+    1800px 950px #fff;
+  animation: animStar 50s linear infinite;
+}
+
+#stars::after {
+  content: "";
+  position: absolute;
+  top: 2000px;
+  width: 1px;
+  height: 1px;
+  box-shadow:
+    120px 500px #fff,
+    250px 100px #fff,
+    400px 300px #fff,
+    550px 700px #fff,
+    700px 150px #fff,
+    850px 450px #fff,
+    1000px 250px #fff,
+    1150px 600px #fff,
+    1300px 100px #fff,
+    1450px 400px #fff,
+    1600px 200px #fff,
+    1750px 650px #fff,
+    1900px 350px #fff,
+    200px 850px #fff,
+    500px 950px #fff,
+    900px 800px #fff,
+    1250px 900px #fff,
+    1550px 800px #fff,
+    1800px 950px #fff;
+}
+
+/* Medium Stars */
+#stars2 {
+  width: 2px;
+  height: 2px;
+  box-shadow:
+    100px 200px #fff,
+    300px 600px #fff,
+    500px 100px #fff,
+    700px 500px #fff,
+    900px 300px #fff,
+    1100px 700px #fff,
+    1300px 200px #fff,
+    1500px 600px #fff,
+    1700px 100px #fff,
+    1900px 500px #fff,
+    250px 900px #fff,
+    650px 850px #fff,
+    1050px 950px #fff,
+    1450px 850px #fff,
+    1850px 900px #fff;
+  animation: animStar 100s linear infinite;
+}
+
+#stars2::after {
+  content: "";
+  position: absolute;
+  top: 2000px;
+  width: 2px;
+  height: 2px;
+  box-shadow:
+    100px 200px #fff,
+    300px 600px #fff,
+    500px 100px #fff,
+    700px 500px #fff,
+    900px 300px #fff,
+    1100px 700px #fff,
+    1300px 200px #fff,
+    1500px 600px #fff,
+    1700px 100px #fff,
+    1900px 500px #fff,
+    250px 900px #fff,
+    650px 850px #fff,
+    1050px 950px #fff,
+    1450px 850px #fff,
+    1850px 900px #fff;
+}
+
+/* Big Stars */
+#stars3 {
+  width: 3px;
+  height: 3px;
+  box-shadow:
+    150px 300px #fff,
+    450px 700px #fff,
+    750px 200px #fff,
+    1050px 500px #fff,
+    1350px 100px #fff,
+    1650px 600px #fff,
+    1950px 300px #fff,
+    350px 950px #fff,
+    850px 900px #fff,
+    1450px 950px #fff,
+    1850px 800px #fff;
+  animation: animStar 150s linear infinite;
+}
+
+#stars3::after {
+  content: "";
+  position: absolute;
+  top: 2000px;
+  width: 3px;
+  height: 3px;
+  box-shadow:
+    150px 300px #fff,
+    450px 700px #fff,
+    750px 200px #fff,
+    1050px 500px #fff,
+    1350px 100px #fff,
+    1650px 600px #fff,
+    1950px 300px #fff,
+    350px 950px #fff,
+    850px 900px #fff,
+    1450px 950px #fff,
+    1850px 800px #fff;
+}
+
+/* Star Animation */
+@keyframes animStar {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+
+
+
+
+/* Card */
+#result-card {
+  width: 18rem;
+  height: 20rem;
+  position: relative;
+  margin-top: 20px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+/* Card Hover */
+#result-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(59, 130, 246, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Image */
+#card-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s ease;
+}
+
+#result-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Bottom Section */
+#card-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(6px);
+}
+
+#card-bottom h2 {
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: capitalize;
+  height: 55px;
+  overflow: hidden;
+}
+
+/* Save Button */
+#save-btn {
+  background: #4f46e5;
+  color: white;
+  padding: 9px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+#save-btn:hover {
+  background: #6366f1;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+}
+
+#save-btn:active {
+  transform: scale(0.95);
+}
+
+
+
+
+
+
+
+
+/* Collection Container */
+#collection-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 25px;
+  padding-top: 100px;
+}
+
+/* Collection Card */
+#collection-card {
+  width: 18rem;
+  height: 20rem;
+  position: relative;
+  margin-top: 15px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+/* Card Hover */
+#collection-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(59, 130, 246, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Collection Image */
+#collection-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+#collection-card:hover #collection-image {
+  transform: scale(1.05);
+}
+
+/* Bottom Section */
+#collection-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(6px);
+}
+
+#collection-bottom h2 {
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: capitalize;
+  height: 55px;
+  overflow: hidden;
+}
+
+/* Remove Button */
+#remove-btn {
+  background: #dc2626;
+  color: white;
+  padding: 9px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+#remove-btn:hover {
+  background: #ef4444;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+}
+
+#remove-btn:active {
+  transform: scale(0.95);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================
+   300px - 480px (Mobile)
+================================= */
+
+@media (min-width: 300px) and (max-width: 480px) {
+
+  #collection-btn {
+    position: absolute;
+    top: 15px;
+    right: 12px;
+    left: auto;
+    padding: 9px 13px;
+    font-size: 12px;
+  }
+
+  #search-container {
+    width: 90%;
+    margin: 75px auto 15px;
+    padding: 18px 12px;
+  }
+
+  #search-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #search-container input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  #search-container button {
+    width: 100%;
+    padding: 11px;
+    font-size: 14px;
+  }
+
+  #search-container input,
+  #search-container button {
+    min-width: 0;
+  }
+
+  .tabs-container {
+    gap: 10px;
+    padding-top: 20px;
+  }
+
+  .tabs-container button {
+    padding: 10px 22px;
+    font-size: 15px;
+  }
+
+  #result-card,
+  #collection-card {
+    width: 90%;
+    max-width: 18rem;
+    height: 280px;
+    margin: 10px auto;
+  }
+
+  #card-bottom,
+  #collection-bottom {
+    padding: 10px;
+    gap: 7px;
+  }
+
+  #card-bottom h2,
+  #collection-bottom h2 {
+    font-size: 13px;
+    height: 45px;
+  }
+
+  #save-btn,
+  #remove-btn {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+
+  #collection-container {
+    gap: 15px;
+    padding: 75px 10px 20px;
+  }
+}
+
+
+/* =================================
+   481px - 600px (Large Mobile)
+================================= */
+
+@media (min-width: 481px) and (max-width: 600px) {
+
+  #collection-btn {
+    top: 18px;
+    right: 20px;
+    left: auto;
+    padding: 10px 16px;
+  }
+
+  #search-container {
+    width: 85%;
+    margin: 80px auto 20px;
+    padding: 22px;
+  }
+
+  #search-container form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #search-container input {
+    flex: 1;
+    min-width: 0;
+  }
+
+  #search-container button {
+    padding: 10px 16px;
+  }
+
+  .tabs-container button {
+    padding: 12px 28px;
+    font-size: 17px;
+  }
+
+  #result-card,
+  #collection-card {
+    width: 17rem;
+    height: 290px;
+    margin: 10px auto;
+  }
+
+  #collection-container {
+    gap: 15px;
+    padding-top: 80px;
+  }
+}
+
+
+/* =================================
+   601px - 768px (Tablet)
+================================= */
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+  #collection-btn {
+    top: 20px;
+    right: 25px;
+    left: auto;
+  }
+
+  #search-container {
+    width: 80%;
+    margin: 80px auto 20px;
+    padding: 25px;
+  }
+
+  #search-container form {
+    display: flex;
+    gap: 12px;
+  }
+
+  #search-container input {
+    flex: 1;
+    min-width: 0;
+  }
+
+  #search-container button {
+    padding: 12px 20px;
+  }
+
+  .tabs-container button {
+    padding: 13px 35px;
+    font-size: 19px;
+  }
+
+  #result-card,
+  #collection-card {
+    width: 17rem;
+    height: 300px;
+  }
+
+  #collection-container {
+    gap: 20px;
+    padding-top: 90px;
+  }
+}
+
+
+/* =================================
+   769px - 992px (Small Laptop)
+================================= */
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+  #collection-btn {
+    top: 22px;
+    right: 30px;
+    left: auto;
+  }
+
+  #search-container {
+    width: 75%;
+    margin: 85px auto 20px;
+  }
+
+  #search-container form {
+    display: flex;
+    gap: 15px;
+  }
+
+  #search-container input {
+    flex: 1;
+    min-width: 0;
+  }
+
+  #result-card,
+  #collection-card {
+    width: 17rem;
+    height: 300px;
+  }
+
+  #collection-container {
+    gap: 22px;
+    padding-top: 90px;
+  }
+}
+
+
+/* =================================
+   993px - 1200px (Laptop)
+================================= */
+
+@media (min-width: 993px) and (max-width: 1200px) {
+
+  #collection-btn {
+    top: 25px;
+    right: 40px;
+    left: auto;
+  }
+
+  #search-container {
+    width: 65%;
+    margin: 90px auto 20px;
+  }
+
+  #search-container input {
+    min-width: 0;
+  }
+
+  #result-card,
+  #collection-card {
+    width: 18rem;
+    height: 320px;
+  }
+
+  #collection-container {
+    gap: 25px;
+    padding-top: 100px;
+  }
+}
+
+
+
